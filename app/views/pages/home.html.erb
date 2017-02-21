@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SuperVoices | Locutores para tus anuncios</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+  </head>
+
+  <body>
+    <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">SuperVoices</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Locutores</a></li>
+                <li><a href="#">Concursos</a></li>
+              </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="../navbar-static-top/">Entrar</a></li>
+				<li class="active"><a href="./" class="">Crear una cuenta <span class="sr-only">(current)</span></a></li>
+			  </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <%= image_tag "SPVoice-slide-1.jpg", :class => "first-slide" %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Locutores a la medida</h1>
+              <p>No importa el tamaño de tu empresa, en SuperVoices podrás encontrar el locutor que más se acomode a tus necesidades.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Empieza ahora</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "SPVoice-slide-2.jpg", :class => "second-slide" %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Cualquier Medio</h1>
+              <p>Ya se para videos de Youtube, comerciales en TV y radio, podrás elegir el locutor más adecuado para el medio de distribución que uses.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag "SPVoice-slide-3.jpg", :class => "third-slide" %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Ambiente Personalizado</h1>
+              <p>Crea concursos para elegir al mejor de los locutores de un serie de ofertas disponibles.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Consulta nuestra galería</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <%= image_tag "microphone.png", :class => "img-circle", :width => "140", :height => "140"  %>
+          <h2>Crea concursos</h2>
+          <p>Los concursos son eventos mediante los cuales convocas a locutores según tus necesidades y asi elegir a que más te guste.</p>
+          <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <%= image_tag "megaphone.png", :class => "img-circle", :width => "140", :height => "140"  %>
+          <h2>Cualquier medio</h2>
+          <p>Crea anuncios para Youtube, comerciales de TV o radio.</p>
+          <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <%= image_tag "industry.png", :class => "img-circle", :width => "140", :height => "140"  %>
+          <h2>Cualquier tipo de empresa</h2>
+          <p>No importa si eres una pequeña, mediana o gran empresa, en SuperVoices nos adecuamos a tus necesidades.</p>
+          <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+           <h2 class="featurette-heading">¿Más opciones? <span class="text-muted">¡Crea un concurso!</span></h2>
+           <p class="lead">Con los concursos de SuperVoices tu empresa prodrá acceder a muchas más voces alrededor del mundo, así tendrás más opciones que se adapten a tus necesidades.</p>
+        </div>
+        <div class="col-md-5">
+           <%= image_tag "MuchasVoces.png", :class => "featurette-image img-responsive center-block"  %>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+           <h2 class="featurette-heading">Personaliza tu concurso <span class="text-muted">Nuestra plataforma también será la de tu empresa</span></h2>
+           <p class="lead">Tendrás una página web especial para tu concurso, que podrás personalizarla de acuerdo a tu imagen corpativa.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <%= image_tag "customize.png", :class => "featurette-image img-responsive center-block"  %>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Muchas necesidades, muchos concursos <span class="text-muted">¡Sube tu voz!.</span></h2>
+          <p class="lead">Hay una gran variedad de empresas con diferentes necesidades que están ansiosas por escuchar tu voz. Seguramente hay un concurso esperando por ti¡anímate!</p>
+        </div>
+        <div class="col-md-5">
+          <%= image_tag "grabar.png", :class => "featurette-image img-responsive center-block"  %>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </div><!-- /.container -->
+    <%= javascript_include_tag 'application', 'holder.min' %>
+  </body>
+</html>
