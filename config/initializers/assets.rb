@@ -12,3 +12,4 @@ Rails.application.config.assets.version = '1.0'
 
 Rails.application.config.assets.precompile += %w( carousel.css )
 Rails.application.config.assets.precompile += %w( holder.min.js )
+Rails.application.config.assets.precompile += %w( validator.min.js )
